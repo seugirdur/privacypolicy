@@ -5,6 +5,22 @@
       <meta name='viewport' content='width=device-width'>
       <title>Privacy Policy</title>
       <style> body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding:1em; } </style>
+        
+        <script> 
+        window.oncontextmenu = function () {
+        return false;
+        };
+
+        document.addEventListener("keydown", function(event){
+        var key = event.key || event.keyCode;
+
+        if (key == 123) {
+           return false;
+        } else if ((event.ctrlKey && event.shiftKey && key == 73) || (event.ctrlKey && event.shiftKey && key == 74)) {
+          return false;
+        }
+        }, false);
+        </script>
     </head>
     <body>
     <strong>Privacy Policy</strong> <p>
